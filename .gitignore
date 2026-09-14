@@ -1,0 +1,5 @@
+target/
+error.txt
+application.properties
+.vscode/
+*.class

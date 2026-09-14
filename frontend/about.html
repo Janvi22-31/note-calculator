@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About - Note Calculator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">💵 Note Calculator</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#calculator">Calculator</a>
+        <a href="history.html">History</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>About Note Calculator</h2>
+      <p class="subtitle">What this project is and how it's built</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="card about-card">
+      <p>
+        <strong>Note Calculator</strong> is a simple full-stack web application
+        that calculates the number of currency notes required for a given
+        amount and denomination. For example, if you enter ₹5000 and choose
+        the ₹500 note, it tells you that you need 10 notes, with ₹0 left over.
+      </p>
+
+      <h3>Technology Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <h4>Frontend</h4>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="tech-item">
+          <h4>Backend</h4>
+          <p>Java, Spring Boot</p>
+        </div>
+        <div class="tech-item">
+          <h4>Database</h4>
+          <p>MySQL</p>
+        </div>
+        <div class="tech-item">
+          <h4>Communication</h4>
+          <p>REST API</p>
+        </div>
+      </div>
+
+      <h3>How it works</h3>
+      <p>
+        The frontend sends the amount and denomination to the Spring Boot
+        backend using a REST API call. The backend calculates the number of
+        notes and remaining amount, saves the result in a MySQL database,
+        and sends the result back as JSON, which the frontend then displays.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Note Calculator. Built with Java, Spring Boot &amp; MySQL.</p>
+  </footer>
+
+</body>
+</html>

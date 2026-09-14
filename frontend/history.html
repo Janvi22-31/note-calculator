@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>History - Note Calculator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">💵 Note Calculator</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#calculator">Calculator</a>
+        <a href="history.html" class="active">History</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Calculation History</h2>
+      <p class="subtitle">All your previous note calculations</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="card">
+      <div class="history-header">
+        <h3>Past Calculations</h3>
+        <button id="clearHistoryBtn" class="btn btn-danger">Clear History</button>
+      </div>
+
+      <p class="server-message" id="historyMessage"></p>
+
+      <div class="table-wrapper">
+        <table id="historyTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Amount</th>
+              <th>Note</th>
+              <th>Number of Notes</th>
+              <th>Remaining</th>
+              <th>Date</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="historyTableBody">
+            <!-- Rows are inserted here by script.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <p id="emptyHistoryText" style="display:none;">No calculations yet. Go to the Calculator page to get started.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Note Calculator. Built with Java, Spring Boot &amp; MySQL.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
